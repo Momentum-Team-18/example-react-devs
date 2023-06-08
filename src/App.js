@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-// import bookData from './book-data.json'
 
-function App() {
-  const devs = ['Anna', 'Teddy', 'Meagan', 'Alex']
 
+function App({ devData, greeting }) {
+  console.log(devData)
   return (
     <div>
-      <h1>React Devs for Hire!</h1>
+      <h1>{greeting} React Devs for Hire!</h1>
       <ul>
-        {devs.map((dev) => {
-          return <Dev name={dev} />
+        {devData.map((dev) => {
+          return <Dev name={dev.name} skills={dev.expertise} />
         })}
       </ul>
     </div>
@@ -19,14 +18,14 @@ function App() {
 
 function Dev(props) {
   const [expanded, setExpanded] = useState(false)
-  // { name: "whatevername"}
+
   return (
     <li>
     <p>{props.name}</p>
     <button onClick={() => setExpanded(!expanded)}> { expanded ? "Show Less" : "Show More"}</button>
     {expanded && (
       <div>
-        <p>Expertise: JS, React</p>
+        <p>{props.skills}</p>
       </div>
     )}
   </li>

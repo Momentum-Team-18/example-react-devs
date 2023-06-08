@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Anna",
+    "expertise": "JS, React",
+    "available": true,
+    "favColor": "blue"
+  },
+  {
+    "name": "Teddy",
+    "expertise": "JS, React",
+    "available": true,
+    "stuff": [1, 2, 5]
+  },
+  {
+    "name": "Meagan",
+    "expertise": "JS, React",
+    "available": false
+  },
+  {
+    "name": "Alex",
+    "expertise": "JS, React",
+    "available": true
+  }
+]
