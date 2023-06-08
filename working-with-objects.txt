@@ -1,0 +1,33 @@
+// This is a capture of the work we did together in the console, not a valid js file to run
+
+const petFacts = {
+  name: "Trix",
+  breed: "chihuahua",
+  color: "black and gray",
+  activities: ["walk", "run", "bark", "sleep", "eat"],
+  otherDogs: { friends: ["Ellie", "That pug"], enemies: ["Anton", "the ducks"] }
+}
+
+petFacts.name
+//'Trix'
+
+petFacts.breed
+//'chihuahua'
+
+petFacts.otherDogs
+// { friends: ["Ellie", "That pug"], enemies: ["Anton", "the ducks"] }
+
+petFacts.activities
+// ['walk', 'run', 'bark', 'sleep', 'eat']
+
+petFacts.activities.map((activity) => "let's " + activity)
+// ["let's walk", "let's run", "let's bark", "let's sleep", "let's eat"]0: "let's walk"1: "let's run"2: "let's bark"3: "let's sleep"4: "let's eat"length: 5[[Prototype]]: Array(0)
+
+petFacts.activities
+// ['walk', 'run', 'bark', 'sleep', 'eat']
+
+const suggestions = petFacts.activities.map((activity) => "let's " + activity)
+
+suggestions
+// ["let's walk", "let's run", "let's bark", "let's sleep", "let's eat"]
+
