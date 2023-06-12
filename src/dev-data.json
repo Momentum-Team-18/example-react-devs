@@ -3,22 +3,26 @@
     "name": "Anna",
     "expertise": "JS, React",
     "available": true,
-    "favColor": "blue"
+    "favColor": "blue",
+    "ghUsername": "annamaynard"
   },
   {
     "name": "Teddy",
     "expertise": "JS, React, Certified Pool Operator",
     "available": true,
-    "stuff": [1, 2, 5]
+    "stuff": [1, 2, 5],
+    "ghUsername": "TheoThibodeau"
   },
   {
     "name": "Meagan",
     "expertise": "JS, React",
-    "available": false
+    "available": false,
+    "ghUsername": "mrubino267"
   },
   {
     "name": "Alex",
     "expertise": "JS, React",
-    "available": true
+    "available": true,
+    "ghUsername": "alexyang4358"
   }
 ]
