@@ -9,11 +9,19 @@ function App({ devData, greeting }) {
       <ul>
         {devData.map((dev) => {
           return (
-            <Dev
-              name={dev.name}
-              skills={dev.expertise}
-              available={dev.available}
-            />
+            <div
+              style={{
+                height: '100px',
+                backgroundColor: '#B1CF5F',
+                margin: '10px',
+                padding: '5px;',
+                display: 'grid',
+                placeContent: 'center',
+                fontSize: '1.5rem',
+              }}
+            >
+              {dev.name}
+            </div>
           )
         })}
       </ul>
