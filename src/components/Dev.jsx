@@ -25,7 +25,7 @@ const Dev = ({ dev, resetDev }) => {
     console.log('Use Effect runs. the value of dev is: ', dev)
     const URL = `https://api.github.com/users/${dev}/repos?per_page=3`
     axios.get(URL).then((response) => setRepos(response.data))
-  }, [])
+  }, [dev])
 
   return (
     <div>
